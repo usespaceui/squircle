@@ -1,58 +1,58 @@
-﻿{
-    "name":  "@usespaceui/squircle",
-    "version":  "0.1.0",
-    "files":  [
-                  "dist"
-              ],
-    "description":  "Squircle geometry generator",
-    "keywords":  [
-                     "react",
-                     "squircle",
-                     "css",
-                     "houdini",
-                     "geometry",
-                     "spaceui",
-                     "corners",
-                     "smooth"
-                 ],
-    "main":  "./dist/index.js",
-    "module":  "./dist/index.mjs",
-    "types":  "./dist/index.d.ts",
-    "exports":  {
-                    ".":  {
-                              "import":  {
-                                             "types":  "./dist/index.d.ts",
-                                             "default":  "./dist/index.mjs"
-                                         },
-                              "require":  {
-                                              "types":  "./dist/index.d.ts",
-                                              "default":  "./dist/index.js"
-                                          }
-                          },
-                    "./package.json":  "./package.json"
-                },
-    "scripts":  {
-                    "build":  "tsup",
-                    "dev":  "tsup --watch",
-                    "typecheck":  "tsc --noEmit"
-                },
-    "publishConfig":  {
-                          "access":  "public"
-                      },
-    "repository":  {
-                       "type":  "git",
-                       "url":  "git+https://github.com/usespaceui/squircle.git"
-                   },
-    "homepage":  "https://squircle.spaceui.one",
-    "bugs":  {
-                 "url":  "https://github.com/usespaceui/squircle/issues"
-             },
-    "devDependencies":  {
-                            "@types/react":  "^19.2.18",
-                            "react":  "^19.2.8",
-                            "tailwindcss":  "^4.0.0",
-                            "tsup":  "^8.0.2",
-                            "typescript":  "^5.3.3"
-                        },
-    "license":  "MIT"
+{
+  "name": "@usespaceui/squircle",
+  "version": "0.1.0",
+  "files": [
+    "dist"
+  ],
+  "description": "Flawless math-driven squircle masking and geometry rendering for modern UIs.",
+  "keywords": [
+    "react",
+    "squircle",
+    "css",
+    "houdini",
+    "geometry",
+    "spaceui",
+    "corners",
+    "smooth"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usespaceui/squircle.git"
+  },
+  "homepage": "https://squircle.spaceui.one",
+  "bugs": {
+    "url": "https://github.com/usespaceui/squircle/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "react": "^19.2.8",
+    "tailwindcss": "^4.0.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
 }
