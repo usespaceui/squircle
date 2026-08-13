@@ -1,10 +1,33 @@
 {
   "name": "@usespaceui/squircle",
-  "version": "0.1.0",
-  "files": [
-    "dist"
-  ],
+  "version": "0.1.1",
   "description": "Flawless math-driven squircle masking and geometry rendering for modern UIs.",
+  "author": {
+    "name": "SpaceUI",
+    "email": "hello@spaceui.one",
+    "url": "https://www.spaceui.one"
+  },
+  "contributors": [
+    {
+      "name": "SpaceUI Team",
+      "email": "hello@spaceui.one",
+      "url": "https://www.spaceui.one"
+    }
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/usespaceui"
+  },
+  "license": "MIT",
+  "homepage": "https://squircle.spaceui.one",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usespaceui/squircle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/usespaceui/squircle/issues",
+    "email": "hello@spaceui.one"
+  },
   "keywords": [
     "react",
     "squircle",
@@ -15,9 +38,16 @@
     "corners",
     "smooth"
   ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "sideEffects": false,
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": {
@@ -39,20 +69,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/usespaceui/squircle.git"
-  },
-  "homepage": "https://squircle.spaceui.one",
-  "bugs": {
-    "url": "https://github.com/usespaceui/squircle/issues"
-  },
   "devDependencies": {
     "@types/react": "^19.2.18",
     "react": "^19.2.8",
     "tailwindcss": "^4.0.0",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
-  },
-  "license": "MIT"
+  }
 }
