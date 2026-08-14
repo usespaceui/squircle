@@ -72,7 +72,7 @@ npm install @usespaceui/squircle
 yarn add @usespaceui/squircle
 ```
 
-Zero dependencies. Add the plugin to your Tailwind configuration or import it directly (Tailwind).
+Zero dependencies. Add the plugin to your Tailwind configuration (v3) or your CSS entry file (v4).
 
 ---
 
@@ -127,29 +127,49 @@ if (typeof window !== 'undefined') {
 }
 ```
 
-## Configure Tailwind CSS 4
+### Configure Tailwind CSS 4
 
-Add the squircle plugin to your `tailwind.config.ts`.
+In Tailwind CSS v4, add the plugin directly to your CSS entry point (e.g. `globals.css` or `styles.css`):
 
 ```css
-@import '@usespaceui/squircle';
+@import "tailwindcss";
+@plugin "@usespaceui/squircle";
 ```
 
 ### Configure Tailwind CSS 3
 
-Add the squircle plugin to your `tailwind.config.js` or `tailwind.config.ts`.
+Add the squircle plugin to your `tailwind.config.js` or `tailwind.config.ts`:
 
-```ts
-import squirclePlugin from '@usespaceui/squircle'
+#### CommonJS (`tailwind.config.js`)
 
+```js
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {},
   },
-  plugins: [squirclePlugin],
+  plugins: [
+    require('@usespaceui/squircle'),
+  ],
 }
+```
+
+#### ESM / TypeScript (`tailwind.config.ts` or `tailwind.config.mjs`)
+
+```ts
+import type { Config } from 'tailwindcss'
+import squircle from '@usespaceui/squircle'
+
+const config: Config = {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [squircle],
+}
+
+export default config
 ```
 
 ---
@@ -244,7 +264,7 @@ export function cn(...inputs: ClassValue[]) {
 
 ### Features
 
-- 💃 **Native Tailwind Integration:** Use utility classes like `squircle-2xl` just like you would `rounded-2xl`. No framework-specific wrappers required and if the navigator don"'t support squricle the rounded value is applies.
+- 💃 **Native Tailwind Integration:** Use utility classes like `squircle-2xl` just like you would `rounded-2xl`. No framework-specific wrappers required, and if the browser doesn't support the Paint API, standard rounded fallback values apply automatically.
 - ⚡ **Zero-JS Layout Thrashing:** Driven by the native CSS Paint API (Houdini). No `ResizeObserver`, no DOM manipulation, no SVG paths. Repaints happen instantly on the compositor thread.
 - 👌 **Framework Agnostic:** Works in React, Vue, Svelte, Solid, or plain HTML.
 
