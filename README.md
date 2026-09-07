@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://squircle.spaceui.one" target="_blank">
+  <a href="https://www.spaceui.one/ui-kit/components/spaceui/squircle" target="_blank">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://squircle.spaceui.one/logo.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://squircle.spaceui.one/logo.svg">
-      <img alt="Space UI logo" src="https://squircle.spaceui.one/logo.svg" width="100" />
+      <source media="(prefers-color-scheme: dark)" srcset="https://www.spaceui.one/logo.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://www.spaceui.one/logo.svg">
+      <img alt="Space UI logo" src="https://www.spaceui.one/logo.svg" width="100" />
     </picture>
   </a>
 </p>
@@ -17,7 +17,7 @@
 </p>
 
 <p align="center">
-  <a href="https://squircle.spaceui.one">Preview</a> • 
+  <a href="https://www.spaceui.one/ui-kit/components/spaceui/squircle">Preview</a> • 
   <a href="https://github.com/usespaceui/squircle">Source Code</a> • 
   <a href="https://www.spaceui.one">SpaceUI.one</a>
 </p>
@@ -132,7 +132,7 @@ if (typeof window !== 'undefined') {
 In Tailwind CSS v4, add the plugin directly to your CSS entry point (e.g. `globals.css` or `styles.css`):
 
 ```css
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "@usespaceui/squircle";
 ```
 
@@ -149,9 +149,7 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [
-    require('@usespaceui/squircle'),
-  ],
+  plugins: [require('@usespaceui/squircle')],
 }
 ```
 
@@ -287,7 +285,7 @@ MIT — Free for commercial and personal use.
 
 ## 📚 Resources
 
-- 🔍 [Explore the squircles & Playground](https://squircle.spaceui.one)
+- 🔍 [Explore the squircles & Playground](https://www.spaceui.one/ui-kit/components/spaceui/squircle)
 - 🌍 [Space UI Official Site](https://www.spaceui.one)
 
 ---
